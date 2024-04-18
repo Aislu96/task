@@ -5,7 +5,6 @@ const students = [
     {name: 'stas', age: 18}
 ]
 
-
 function groupStudents(students){
     let stud = {};
     students.forEach(s => {
@@ -14,9 +13,8 @@ function groupStudents(students){
         } else {
             stud[s.age].push(s)
         }
-
     })
     return stud;
 }
 
-console.log(groupStudents(students))
+console.log(groupStudents(students));
