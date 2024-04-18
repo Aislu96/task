@@ -161,3 +161,14 @@
 //
 // console.log('end');
 //start end promise1 timer1 promise2 timer2
+
+
+const promise = new Promise((resolve, reject) => {
+    resolve(1)
+})
+
+promise.then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+})
